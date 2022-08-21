@@ -1,0 +1,55 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.galeria{
+    width: 100%; /*este es el ancho de % en auto*/
+    display: grid; /* este es un display su funcion es darle movimiento al objeto*/
+    margin: 0 auto;/*este es el margen en auto*/
+}
+.columna{
+    display: grid;/* este es el display grip*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) ); /*Este es el grip template columns*/
+    grid-gap: 10px;/*Este es el espacio entre columnas*/
+}
+
+.card  {
+    width: 100%; /*este es el ancho de la imagen*/
+    height: auto; /*esta es la altura de la imagen*/
+    display: flex; /*convierte a los objetos de la paginas en objetos especificos*/
+    flex-direction: column; /* le da direccion a los objetos flexiblesdee la pagina*/
+    justify-content: center; /*justifica en el centro el contenido de la pagina*/
+    align-items: center;/*alinea en el centro a los objetos de la pagina */
+    padding: 20px; /*le da un marcoa los objetivos dentro de el*/
+    border-radius: 5px; /*le da un radio al borde */
+    border: 1px solid #CCC; /*le da una forma y color a losa bordes*/
+    margin-bottom: 10px; /*le da un espacio de 10 px hacia abajo*/
+} 
+
+img {
+    width: 100%;
+    height: 0 auto;
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* inicio Menu o navegador*/
+header {
+    width: 100%;
+    height: 3em;
+    background: rgb(150, 175, 237);
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+/*fin menu o navegador*/
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
